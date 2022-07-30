@@ -74,7 +74,7 @@ const ItemProduct = styled.li`
 
   @media screen and (max-width: 820px) {
     min-width: 140px;
-    height: 220px;
+    height: 250px;
 
     .textContainer {
       padding: 5px;
