@@ -8,7 +8,7 @@ const Header = ({ showProducts }) => (
 
         <div>
           <input onChange={(e) => {
-            const search = e.target.value.trim();
+            const search = e.target.value.trim().toLowerCase();
             showProducts(search);
           }} type="text" placeholder="Digitar Pesquisa" />
           <button>Pesquisar</button>
