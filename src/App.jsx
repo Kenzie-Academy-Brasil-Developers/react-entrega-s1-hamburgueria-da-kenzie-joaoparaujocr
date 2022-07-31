@@ -75,7 +75,7 @@ function App() {
   }
 
   const showProducts = (search) => {
-    const newArr = productsList.filter(({ name }) => name.toLowerCase().includes(search.trim()));
+    const newArr = productsList.filter(({ name, category }) => name.toLowerCase().includes(search.trim()) || category.toLowerCase().includes(search.trim()));
     setFilterProductsList(newArr);
   }
 
